@@ -107,17 +107,17 @@ nav.mobile {
 }
 
 /* ---- Mobile Navigation Bar ---- */
-@media only screen and (max-width: 768px) { 
-  nav.desktop {
-    display: none; 
-  }
+  @media only screen and (max-width: 768px) { 
+    nav.desktop {
+      display: none; 
+    }
 
-  nav.mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    nav.mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
-}
 
 /* ---- Banner Header ---- */
 header {
@@ -154,6 +154,30 @@ header img {
   color: white;
 }
 
+  /* ---- Media Query ---- */
+  @media only screen and (max-width: 768px) { 
+    .header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header img {
+     max-width: 100%;
+     margin: 0;
+    } 
+
+    .header-content {
+      max-width: 100%;
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 320px) { 
+    .header img {
+      margin-top: 3rem;
+    }
+  }
+
 /* ---- Supporting Info and Thesis Exhibit ---- */
 .supporting {
   display: flex;
@@ -171,19 +195,13 @@ header img {
   height: auto;
 }
 
-.supporting-intro h3{
+.supporting-intro h3 {
   padding-top: 1.5rem;
 }
 
 .supporting-intro p {
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1.5rem 0;
 }
-
-/* --- Card Images for Mobile ---- */
-.card img.mobile {
-  display: none;
-}
-/* ------------------------------ */
 
 .info-cards {
   border-left: 1px solid #f2f2f2;
@@ -219,6 +237,47 @@ header img {
 .card-item p {
   padding: .5rem 0;
 }
+
+.card img.mobile {
+  display: none;
+}
+
+  /* ---- Media Query ---- */
+  @media only screen and (max-width: 768px) { 
+
+    .supporting.container {
+      max-width: 100%;
+    }
+    .supporting-intro {
+      display: none;
+    }
+
+    .info-cards {
+      border-left: none;
+      max-width: 100%;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      box-shadow: none;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .card:hover {
+      box-shadow: none;
+    }
+
+  /* @media only screen and (max-width: 468px) {
+    .card img.desktop {
+
+    } */
+  }
 
 /* ---- Courses - Start Learning ---- */
 .courses {
@@ -266,6 +325,29 @@ header img {
   margin-bottom: 8px;
 }
 
+  /* ---- Media Query ---- */
+  @media only screen and (max-width: 768px) { 
+    .main-courses {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 2rem 4rem;
+    }
+
+    .course-card {
+      max-width: 100%;
+    }
+
+    .course-card img {
+      display: none;
+    }
+
+    span p {
+      display: none;
+    }
+  }
+  
+
 /* ---- Thesis -- Look at Supporting Section ---- */
 .thesis h2 {
   text-align: center;
@@ -299,3 +381,11 @@ footer {
 .footer-items {
   font-weight: 900;
 }
+
+  /* ---- Media Query ---- */
+  @media only screen and (max-width: 768px) { 
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
