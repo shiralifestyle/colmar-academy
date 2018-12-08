@@ -6,34 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
     <!-- favicon -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700,700i,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' href='resources/css/reset.css'>
     <link rel='stylesheet' type='text/css' href='resources/css/style.css'>
   </head>
   <body>
     <!-- ---- // Desktop Navigation Bar // ---- -->
-    <div class="container">
-      <nav class="desktop">
-        <div class="logo">
-          <img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo" />
-          <span class="logo-text"><span class="colmar">COLMAR</span>ACADEMY</span>
-        </div>
-        <div class="menu-desktop">
-          <a href="#">ON CAMPUS</a>
-          <a href="#">ONLINE</a>
-          <a href="#">FOR COMPANIES</a>
-          <a href="#">SIGN IN</a>
-        </div>
-      </nav>
-      <!-- ---- // Mobile Navigation Bar // ---- -->
-      <nav class="mobile">
-        <a href="#"><img src="resources/images/ic-logo.svg" alt="Colmar Academy logo" /></a>
-        <a href="#"><img src="resources/images/ic-on-campus.svg" alt="On Campus menu option" /></a>
-        <a href="#"><img src="resources/images/ic-online.svg" alt="Online menu option" /></a>
-        <a href="#"><img src="resources/images/ic-login.svg" alt="Login menu option" /></a>    
-      </nav>
-    </div>
+    <nav class="desktop">
+      <a href="#" class="logo">
+        <img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo" />
+        <span class="logo-text"><span class="colmar">COLMAR</span>ACADEMY</span>
+      </a>
+      <div class="menu desktop">
+        <a href="#">ON CAMPUS</a>
+        <a href="#">ONLINE</a>
+        <a href="#">FOR COMPANIES</a>
+        <a href="#">SIGN IN</a>
+      </div>
+    </nav>
+    <!-- ---- // Mobile Navigation Bar // ---- -->
+    <nav class="mobile">
+      <a href="#"><img src="resources/images/ic-logo.svg" alt="Colmar Academy logo" /></a>
+      <a href="#"><img src="resources/images/ic-on-campus.svg" alt="On Campus menu option" /></a>
+      <a href="#"><img src="resources/images/ic-online.svg" alt="Online menu option" /></a>
+      <a href="#"><img src="resources/images/ic-login.svg" alt="Login menu option" /></a>    
+    </nav>
     <!-- ---- // Banner Header // ---- -->
     <header>
       <div class="header container">
@@ -41,7 +39,7 @@
         <div class="header-content">
           <h2>Learn something new everyday</h2>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          <a class="cta-btn" href="#">START HERE</a>
+          <a class="cta" href="#">Start Here</a>
         </div>
       </div>
     </header>
@@ -58,7 +56,7 @@
       <!-- ---- Info Card Section ---- -->
       <div class="info-cards">
         <!-- First Card -->
-        <div class="card orientation">
+        <div class="card">
           <img class="desktop" src="resources/images/information-orientation.jpg" alt="students walking in the sun" />
           <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="students walking in the sun" />
           <div class="card-item">
@@ -68,7 +66,7 @@
           </div>
         </div>
         <!-- Second Card -->
-        <div class="card">
+        <div class="card second-card">
           <img class="desktop" src="resources/images/information-campus.jpg" alt="inisde the campus" />
           <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="inisde the campus" />
           <div class="card-item">
@@ -172,8 +170,10 @@
       </div>
       <div class="supporting">
         <div class="supporting-intro">  
-          <!-- VIDEO -->  <!-- *************   PUT IN VIDEO *************** -->
-          <img src="resources/images/information-main.jpg" alt="a man sitting and reading a book" />
+          <video autoplay muted loop>
+            <source src="resources/videos/thesis.mp4" type="video/mp4">
+            <p>Your browser does not support the video element.</p>
+          </video>
           <h3>Reimagine Urban</h3>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. 
             Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
@@ -181,9 +181,9 @@
         <!-- ---- Info Card Section ---- -->
         <div class="info-cards">
           <!-- First Card -->
-          <div class="card orientation">
-            <img class="desktop" src="resources/images/information-orientation.jpg" alt="students walking in the sun" />
-            <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="students walking in the sun" />
+          <div class="card">
+            <img class="desktop" src="resources/images/thesis-fisma.jpg" alt="hand next to mobile phone designing on paper" />
+            <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="hand next to mobile phone designing on paper" />
             <div class="card-item fisma">
               <h3>Fisma: Design and Prototype</h3>
               <p>Designer showcase of new prototype product</p>
@@ -191,9 +191,9 @@
             </div>
           </div>
           <!-- Second Card -->
-          <div class="card">
-            <img class="desktop" src="resources/images/information-campus.jpg" alt="inisde the campus" />
-            <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="inisde the campus" />
+          <div class="card second-card">
+            <img class="desktop" src="resources/images/thesis-now-and-then.jpg" alt="New York City sky scrapers" />
+            <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="New York City sky scrapers" />
             <div class="card-item">
               <h3>Now and Then</h3>
               <p>Research study about New York.</p>
@@ -209,9 +209,9 @@
       <div class="copyright">
         <p>© Colmar Academy. All rights reserved</p>
       </div>
-      <div class="policies">
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
+      <div class="menu footer-items">
+        <a href="#">TERMS</a>
+        <a href="#">PRIVACY</a>
       </div>
     </footer>
   </body>

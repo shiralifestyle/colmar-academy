@@ -13,6 +13,11 @@ body {
   background-color: white;
 }
 
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
@@ -32,9 +37,44 @@ h3 {
   font-size: 1.2rem;
 }
 
-.container {
-  max-width: 1500px;
-  margin: 0 auto;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*-- Buttons -- */
+ .cta,
+ .btn {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.cta {
+  background-color: #6a898c; /* #ffae19;*/
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.cta:hover, 
+.btn:hover {
+  color: #ffae19;
+  cursor: pointer;
+}
+
+/* -- Menu Nav Bar and Footer links --*/
+.menu.desktop a,
+.footer-items a {
+  color: black;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.menu.desktop a:hover,
+.footer-items a:hover {
+  color:  #DD4A41;
 }
 
 /* ---- Desktop Navigation Bar ---- */
@@ -44,14 +84,13 @@ nav {
   font-family: 'Open Sans', sans-serif;
   color: black;
   font-weight: 800;
-  background-color :#cae1e3;
+  background-color :#98C5C9;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
   padding: 0 1.5rem;
-
 }
 
 .logo {
@@ -60,13 +99,7 @@ nav {
 }
 
 .logo-text .colmar {
-  color: #f65349;
-}
-
-.menu-desktop a {
-  color: black;
-  text-decoration: none;
-  margin-right: 1rem;
+  color: #DD4A41;
 }
 
 nav.mobile {
@@ -118,21 +151,11 @@ header img {
 }
 
 .header a {
-  text-decoration: none;
   color: white;
-}
-
-.header .cta-btn {
-  background-color: orange;
-  display: block;
-  text-align: center;
-  padding: 0.5rem 0;
-  font-size: 1.3rem;
 }
 
 /* ---- Supporting Info and Thesis Exhibit ---- */
 .supporting {
-  background-color: white;
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
@@ -172,11 +195,20 @@ header img {
   flex-direction: row;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  cursor: default;
+}
+
+.second-card {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.card:hover {
+  box-shadow: 0 6px 10px 0 rgba(5, 35, 49, 0.14), 0 1px 18px 0 rgba(5, 35, 49, 0.20);
 }
 
 .card img {
-  width: 35%;
+  max-width: 35%;
   height: auto;
 }
 
@@ -206,9 +238,14 @@ header img {
 }
 
 .course-card {
+  background-color: white;
   box-shadow: 0 2px 6px rgba(0,0,0,.2);
   max-width: 30%;
   margin: 1rem;
+}
+
+.course-card:hover {
+  box-shadow: 0 6px 10px 0 rgba(5, 35, 49, 0.14), 0 1px 18px 0 rgba(5, 35, 49, 0.50);
 }
 
 .course-card img {
@@ -216,8 +253,13 @@ header img {
   max-width: 100%;
 }
 
-.course-card a {
-  text-decoration: none;
+.course-card img:hover {
+  transition: .3s, ease-in-out;
+}
+
+.course-card span {
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .card-item h3 {
@@ -233,9 +275,15 @@ header img {
   padding-top: 0;
 }
 
+video {
+  width: 100%;
+  height: auto;
+  /*pointer-events: auto;
+  cursor: 20 20,pointer;*/
+}
 /* ---- Footer ---- */
 footer {
-  background-color: #d03c1b;
+  background-color: #98C5C9;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -243,7 +291,11 @@ footer {
   padding: 1rem 2rem;
 }
 
-.policies a {
-  text-decoration: none;
-  margin-right: 1rem;
+.copyright {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.footer-items {
+  font-weight: 900;
 }
