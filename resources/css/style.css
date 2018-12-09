@@ -177,6 +177,14 @@ header img {
       text-align: center;
     }
   }
+  /* ---- Media Query ---- */
+  @media only screen and (max-width: 620px) { 
+    .header-content {
+      margin: 0 0.5rem;
+      max-width: 100%;
+      text-align: left;
+    }
+  }
 
   @media only screen and (min-width: 320px) { 
     .header img {
@@ -229,7 +237,6 @@ header img {
 
 .card:hover {
   box-shadow: 0 6px 10px 0 rgba(5, 35, 49, 0.14), 0 1px 18px 0 rgba(5, 35, 49, 0.20);
-  transition: 0.3s ease-in-out;
 }
 
 .card img {
@@ -239,6 +246,10 @@ header img {
 
 .card-item {
   padding: 1rem;
+}
+
+.card-item h3 {
+  margin-bottom: 8px;
 }
 
 .card-item span {
@@ -261,6 +272,8 @@ header img {
     }
 
     .info-cards {
+      display: flex;
+      max-width: 100%;
       border-left: none;
     }
 
@@ -270,14 +283,30 @@ header img {
       flex-direction: column;
     }
 
-    .card img {
+    .card img.desktop {
+      display: none;
+    }
+
+    .card img.mobile {   
+      display: inline;
       max-width: 100%;
       height: auto;
+    }
+
+    .second-card {
+      margin: 0;
     }
 
     .card:hover {
       box-shadow: none;
     }
+    .card-item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
 
    /* .card img.mobile {
       max-width: 100%;
@@ -291,6 +320,25 @@ header img {
 
     .info-cards.thesis {
       display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 620px) { 
+    .info-cards {
+      display: flex;
+      flex-direction: column;
+      border-left: none;
+    }
+
+    .card {
+      box-shadow: none;
+      max-width: 100%;
+    }
+
+    .card img.mobile {   
+      display: inline;
+      max-width: 100%;
     }
   }
 
@@ -316,11 +364,11 @@ header img {
   box-shadow: 0 2px 6px rgba(0,0,0,.2);
   max-width: 30%;
   margin: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .course-card:hover {
   box-shadow: 0 6px 10px 0 rgba(5, 35, 49, 0.14), 0 1px 18px 0 rgba(5, 35, 49, 0.50);
-  transition: 0.2s ease-in-out;
 }
 
 .course-card img {
@@ -328,17 +376,13 @@ header img {
   max-width: 100%;
 }
 
-.course-card img:hover {
-  transition: .3s, ease-in-out;
-}
-
 .course-card span {
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-.card-item h3 {
-  margin-bottom: 8px;
+.course-card span:hover {
+  
 }
 
   /* ---- Media Query ---- */
