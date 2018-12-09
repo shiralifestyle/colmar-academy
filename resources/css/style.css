@@ -48,6 +48,8 @@ a {
   text-transform: uppercase;
   font-size: .8rem;
   font-weight: 700;
+  transition: color 0.3s ease-in-out;
+  color: #DD4A41;
 }
 
 .cta {
@@ -58,11 +60,13 @@ a {
   font-size: 1.3rem;
 }
 
-.cta:hover, 
-.btn:hover {
+.cta:hover {
   color: #ffae19;
+} 
+.btn:hover {
   cursor: pointer;
 }
+
 
 /* -- Menu Nav Bar and Footer links --*/
 .menu.desktop a,
@@ -70,6 +74,7 @@ a {
   color: black;
   text-decoration: none;
   margin-right: 1rem;
+  transition: color 0.2s ease-in-out;
 }
 
 .menu.desktop a:hover,
@@ -169,6 +174,7 @@ header img {
     .header-content {
       max-width: 100%;
       padding: 2rem 1.5rem;
+      text-align: center;
     }
   }
 
@@ -223,6 +229,7 @@ header img {
 
 .card:hover {
   box-shadow: 0 6px 10px 0 rgba(5, 35, 49, 0.14), 0 1px 18px 0 rgba(5, 35, 49, 0.20);
+  transition: 0.3s ease-in-out;
 }
 
 .card img {
@@ -232,6 +239,10 @@ header img {
 
 .card-item {
   padding: 1rem;
+}
+
+.card-item span {
+  color: #3c4e50;
 }
 
 .card-item p {
@@ -245,38 +256,42 @@ header img {
   /* ---- Media Query ---- */
   @media only screen and (max-width: 768px) { 
 
-    .supporting.container {
-      max-width: 100%;
-    }
-    .supporting-intro {
+    .supporting-intro.info {
       display: none;
     }
 
     .info-cards {
       border-left: none;
-      max-width: 100%;
     }
 
     .card {
+      box-shadow: none;
       display: flex;
       flex-direction: column;
-      width: auto;
-      box-shadow: none;
     }
 
     .card img {
       max-width: 100%;
       height: auto;
     }
-    
+
     .card:hover {
       box-shadow: none;
     }
 
-  /* @media only screen and (max-width: 468px) {
-    .card img.desktop {
-
+   /* .card img.mobile {
+      max-width: 100%;
+      height: auto;
     } */
+
+    /* @media only screen and (max-width: 468px) {
+      card img.desktop {
+      } */
+  
+
+    .info-cards.thesis {
+      display: none;
+    }
   }
 
 /* ---- Courses - Start Learning ---- */
@@ -305,6 +320,7 @@ header img {
 
 .course-card:hover {
   box-shadow: 0 6px 10px 0 rgba(5, 35, 49, 0.14), 0 1px 18px 0 rgba(5, 35, 49, 0.50);
+  transition: 0.2s ease-in-out;
 }
 
 .course-card img {
@@ -336,6 +352,7 @@ header img {
 
     .course-card {
       max-width: 100%;
+      margin: 0.5rem;
     }
 
     .course-card img {
@@ -384,8 +401,7 @@ footer {
 
   /* ---- Media Query ---- */
   @media only screen and (max-width: 768px) { 
-    footer {
-      display: flex;
-      flex-direction: column;
+    .footer-items {
+      display: none;
     }
   }
