@@ -173,6 +173,7 @@ header img {
     .header-content {
       max-width: 100%;
       padding: 2rem 1.5rem;
+      text-align: center;
     }
   }
   /* ---- Media Query ---- */
@@ -265,6 +266,10 @@ header img {
 
   /* ---- Media Query ---- */
   @media only screen and (max-width: 768px) { 
+    .supporting {
+      justify-content: center;
+    }
+
     .supporting-intro {
       margin: 0;
       max-width: 100%;
@@ -281,7 +286,7 @@ header img {
 
     .card {
       box-shadow: none;
-      display: flex;
+      display: block;
       flex-direction: column;
       align-items: flex-start;
       padding-top: 0;
@@ -316,6 +321,10 @@ header img {
   }
 
   @media only screen and (max-width: 620px) { 
+    .supporting {
+      justify-content: left;
+    }
+
     .info-cards {
       display: flex;
       flex-direction: column;
