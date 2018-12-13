@@ -14,11 +14,11 @@
   <body>
     <!-- ---- // Desktop Navigation Bar // ---- -->
     <nav class="desktop">
-      <a href="#" class="logo">
+      <a href="#" class="logo" role="colmar academy role">
         <img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo" />
         <span class="logo-text"><span class="colmar">COLMAR</span>ACADEMY</span>
       </a>
-      <div class="menu desktop">
+      <div class="menu desktop" role="menu navigation">
         <a href="#">ON CAMPUS</a>
         <a href="#">ONLINE</a>
         <a href="#">FOR COMPANIES</a>
@@ -34,7 +34,7 @@
     </nav>
     <!-- ---- // Banner Header // ---- -->
     <header>
-      <div class="header container">
+      <div class="header container" role="banner">
         <img src="resources/images/banner.jpg" alt="students reading their books" />
         <div class="header-content">
           <h2>Learn something new everyday</h2>
@@ -45,7 +45,7 @@
     </header>
 
     <!-- ---- // Supporting Info // ---- -->
-    <section class="supporting container">
+    <section class="supporting container" role="information">
       <div class="supporting-intro info">
         <img src="resources/images/information-main.jpg" alt="a man sitting and reading a book" />
         <h3>It doesn't hurt to keep practicing</h3>
@@ -56,7 +56,7 @@
       <!-- ---- Info Card Section ---- -->
       <div class="info-cards">
         <!-- First Card -->
-        <div class="card">
+        <div class="card" role="orientation date">
           <img class="desktop" src="resources/images/information-orientation.jpg" alt="students walking in the sun" />
           <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="students walking in the sun" />
           <div class="card-item">
@@ -66,7 +66,7 @@
           </div>
         </div>
         <!-- Second Card -->
-        <div class="card second-card">
+        <div class="card second-card" role="our campus">
           <img class="desktop" src="resources/images/information-campus.jpg" alt="inisde the campus" />
           <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="inisde the campus" />
           <div class="card-item">
@@ -76,7 +76,7 @@
           </div>
         </div>
         <!-- Third Card -->
-        <div class="card">
+        <div class="card" role="our guest lecturer">
           <img class="desktop" src="resources/images/information-guest-lecture.jpg" alt="photo of the guest lecturer" />
           <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="photo of the guest lecturer" />
           <div class="card-item">
@@ -89,12 +89,12 @@
     </section>
 
     <!-- ---- // Courses - Start Learning // ---- -->
-    <section class="courses">
+    <section class="courses" role="courses offered">
       <div class="container">
         <h2>Start Learning</h2>
         <div class="main-courses">
           <!-- First Card -->
-          <div class="course-card">
+          <div class="course-card" role="software engineering">
             <a href="#">
               <img src="resources/images/course-software.jpg" alt="computers" />
               <div class="card-item">
@@ -107,7 +107,7 @@
             </a>
           </div>  
           <!-- Second Card -->
-          <div class="course-card">
+          <div class="course-card" role="computer art">
             <a href="#">
              <img src="resources/images/course-computer-art.jpg" alt="mobile phone" />
               <div class="card-item">
@@ -120,7 +120,7 @@
             </a>
           </div>
           <!-- Third Card -->
-          <div class="course-card">
+          <div class="course-card" role="design">
             <a href="#">
               <img src="resources/images/course-design.jpg" alt="old-fashioned camera" />
               <div class="card-item">
@@ -133,7 +133,7 @@
             </a>
           </div>
           <!-- Fourth Card -->
-          <div class="course-card">
+          <div class="course-card" role="data">
             <a href="#">
               <img src="resources/images/course-data.jpg" alt="data shown on laptop" />
               <div class="card-item">
@@ -146,7 +146,7 @@
             </a>
           </div>
           <!-- Fifth Card -->
-          <div class="course-card">
+          <div class="course-card" role="business">
             <a href="#">
               <img src="resources/images/course-business.jpg" alt="game of chess" />
               <div class="card-item">
@@ -159,7 +159,7 @@
             </a>
           </div>
           <!-- Sixth Card -->
-          <div class="course-card">
+          <div class="course-card" role="marketing">
             <a href="#">
               <img src="resources/images/course-marketing.jpg" alt="watch" />
               <div class="card-item">
@@ -176,7 +176,7 @@
     </section>
 
     <!-- ---- // Thesis Exhibit // ---- -->
-    <section class="container">
+    <section class="container" role="thesis exhibit">
       <div class="thesis">
         <h2>Thesis Exhibit</h2>
       </div>
@@ -186,14 +186,14 @@
             <source src="resources/videos/thesis.mp4" type="video/mp4">
             <p>Your browser does not support the video element.</p>
           </video>
-            <h3 class="thesis-intro">Reimagine Urban</h3>
-            <p class="thesis-intro">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. 
+            <h3 class="thesis-intro" aria-label="thesis exhibit video called reimagine urban">Reimagine Urban</h3>
+            <p class="thesis-intro" aria-label="introduciton to the video">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. 
               Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         </div>
         <!-- ---- Info Card Section ---- -->
-        <div class="info-cards thesis">
+        <div class="info-cards thesis" role="thesis exhibits on display">
           <!-- First Card -->
-          <div class="card">
+          <div class="card" role="fisma: design and prototype thesis exhibit">
             <img class="desktop" src="resources/images/thesis-fisma.jpg" alt="hand next to mobile phone designing on paper" />
             <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="hand next to mobile phone designing on paper" />
             <div class="card-item fisma">
@@ -203,7 +203,7 @@
             </div>
           </div>
           <!-- Second Card -->
-          <div class="card second-card">
+          <div class="card second-card" role="now and then thesis exibit">
             <img class="desktop" src="resources/images/thesis-now-and-then.jpg" alt="New York City sky scrapers" />
             <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="New York City sky scrapers" />
             <div class="card-item">
@@ -219,9 +219,9 @@
     <!-- ---- // Footer // ---- -->
     <footer>
       <div class="copyright">
-        <p>© Colmar Academy. All rights reserved</p>
+        <p aria-label="copyright, colmar academy, all rights reserved.">© Colmar Academy. All rights reserved</p>
       </div>
-      <div class="menu footer-items">
+      <div class="menu footer-items" role="terms and privacy page">
         <a href="#">TERMS</a>
         <a href="#">PRIVACY</a>
       </div>
