@@ -46,14 +46,14 @@ a {
  .cta,
  .btn {
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   transition: color 0.3s ease-in-out;
   color: #DD4A41;
 }
 
 .cta {
-  background-color: #6a898c; /* #ffae19;*/
+  background-color: #6a898c; 
   display: block;
   text-align: center;
   padding: 0.5rem 0;
@@ -63,10 +63,10 @@ a {
 .cta:hover {
   color: #ffae19;
 } 
+
 .btn:hover {
   cursor: pointer;
 }
-
 
 /* -- Menu Nav Bar and Footer links --*/
 .menu.desktop a,
@@ -162,8 +162,7 @@ header img {
   /* ---- Media Query ---- */
   @media only screen and (max-width: 768px) { 
     .header {
-      display: flex;
-      flex-direction: column;
+      display: block;
     }
 
     .header img {
@@ -174,7 +173,6 @@ header img {
     .header-content {
       max-width: 100%;
       padding: 2rem 1.5rem;
-      text-align: center;
     }
   }
   /* ---- Media Query ---- */
@@ -228,6 +226,7 @@ header img {
   align-items: center;
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  border-radius: 3px;
   cursor: default;
 }
 
@@ -266,13 +265,16 @@ header img {
 
   /* ---- Media Query ---- */
   @media only screen and (max-width: 768px) { 
-
+    .supporting-intro {
+      margin: 0;
+      max-width: 100%;
+    }
+    
     .supporting-intro.info {
       display: none;
     }
 
     .info-cards {
-      display: flex;
       max-width: 100%;
       border-left: none;
     }
@@ -281,6 +283,8 @@ header img {
       box-shadow: none;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
+      padding-top: 0;
     }
 
     .card img.desktop {
@@ -300,29 +304,16 @@ header img {
     .card:hover {
       box-shadow: none;
     }
-    .card-item {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-
-   /* .card img.mobile {
-      max-width: 100%;
-      height: auto;
-    } */
-
-    /* @media only screen and (max-width: 468px) {
-      card img.desktop {
-      } */
-  
 
     .info-cards.thesis {
       display: none;
     }
-  }
 
+    .card-item h3 {
+      margin: 0;
+    }
+
+  }
 
   @media only screen and (max-width: 620px) { 
     .info-cards {
@@ -334,7 +325,9 @@ header img {
     .card {
       box-shadow: none;
       max-width: 100%;
+      align-items: flex-start;
     }
+
 
     .card img.mobile {   
       display: inline;
@@ -365,6 +358,7 @@ header img {
   max-width: 30%;
   margin: 1rem;
   transition: all 0.2s ease-in-out;
+  border-radius: 3px;
 }
 
 .course-card:hover {
@@ -381,14 +375,10 @@ header img {
   font-weight: 700;
 }
 
-.course-card span:hover {
-  
-}
-
   /* ---- Media Query ---- */
   @media only screen and (max-width: 768px) { 
     .main-courses {
-      display: flex;
+      display: inline;
       flex-direction: column;
       margin: 0;
       padding: 2rem 4rem;
@@ -399,16 +389,19 @@ header img {
       margin: 0.5rem;
     }
 
+    .card-item h3 {
+      align-items: center;
+    }
+
     .course-card img {
       display: none;
     }
 
-    span p {
+    .card-item-item {
       display: none;
     }
   }
   
-
 /* ---- Thesis -- Look at Supporting Section ---- */
 .thesis h2 {
   text-align: center;
@@ -421,9 +414,19 @@ header img {
 video {
   width: 100%;
   height: auto;
-  /*pointer-events: auto;
-  cursor: 20 20,pointer;*/
 }
+
+  /* ---- Media Query ---- */
+  @media only screen and (max-width: 768px) { 
+    video {
+      max-width: 100%;
+    }
+
+    .thesis-intro {
+      display: none;
+    }
+  }
+
 /* ---- Footer ---- */
 footer {
   background-color: #98C5C9;
